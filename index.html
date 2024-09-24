@@ -60,6 +60,9 @@
         .contact-info a:hover {
             background-color: rgba(255,255,255,0.3);
         }
+        .phone {
+            word-wrap: break-word;
+        }
         section {
             background-color: #fff;
             margin-bottom: 30px;
@@ -136,7 +139,7 @@
         <h1>Ahmed Abulkhair</h1>
         <div class="title">Lead Data Scientist</div>
         <div class="contact-info">
-            <a href="tel:+201002130308">+201002130308</a>
+            <a href="tel:+201002130308" class="phone">+201002130308</a>
             <a href="mailto:ahmed.abulkhair@hotmail.com">Email</a>
             <a href="https://www.linkedin.com/in/aaabulkhair" target="_blank">LinkedIn</a>
             <a href="https://aaabulkhair.github.io/Analixa/" target="_blank">Blog</a>
@@ -149,50 +152,56 @@
     <div class="container">
         <section>
             <h2>Profile</h2>
-            <p>Lead Data Scientist with 6+ years of expertise in Machine Learning, Python, Deep Learning, and Time Series Forecasting. Recognized for deploying innovative data-driven solutions and driving business growth. Adept at solving complex challenges, delivering actionable insights, and mentoring teams. Committed to leveraging data to create value in business operations.</p>
+            <p>Lead Data Scientist with 6+ years of expertise in Machine Learning, Python, Deep Learning, Time Series Forecasting, and Data Preprocessing. Adept at deploying data-driven solutions and solving complex challenges in various industries. Known for leadership in developing AI-driven projects and improving business operations. I have a passion for using data to drive impactful business results and mentoring data science teams.</p>
         </section>
 
         <section>
             <h2>Professional Experience</h2>
             <div class="timeline">
                 <div class="job">
-                    <h3>Lead Data Scientist Consultant | ShopBrain, Beverly Hills, Sheikh Zayed</h3>
-                    <div class="date">July 2024 — Present</div>
-                    <ul>
-                        <li>Enhanced forecasting engine for restaurants, reducing MAPE from 28% to 25%.</li>
-                        <li>Led development of a chatbot assistant using GPT-4 and LangChain technologies.</li>
-                        <li>Integrated API solutions for restaurant management systems, improving operational efficiency.</li>
-                    </ul>
-                </div>
-                <div class="job">
                     <h3>Lead Data Scientist | ShopBrain, Beverly Hills, Sheikh Zayed</h3>
-                    <div class="date">February 2024 — July 2024</div>
+                    <div class="date">February 2024 — Present</div>
                     <ul>
-                        <li>Orchestrated data-driven solutions for demand forecasting in the F&B sector.</li>
-                        <li>Achieved substantial improvement in data accuracy and model reliability.</li>
+                        <li>Spearheaded the Data Team's efforts to enhance the demand forecasting engine for restaurants, reducing MAPE from 28% to 25%.</li>
+                        <li>Led a chatbot assistant project using GPT-4, LLaMA 2, and LangChain to support restaurant operations.</li>
+                        <li>Integrated forecasting models into restaurant management systems via RESTful APIs, improving overall business efficiency.</li>
                     </ul>
                 </div>
                 <div class="job">
                     <h3>Senior Data Scientist | Jumia Group</h3>
                     <div class="date">March 2022 — March 2023</div>
                     <ul>
-                        <li>Developed machine learning models that reduced workforce budget by 92%.</li>
-                        <li>Optimized cash-on-delivery feature, lowering rejection rates by 12%.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Teaching Assistant | Information Technology Institute (ITI)</h3>
-                    <div class="date">July 2020 — July 2024</div>
-                    <ul>
-                        <li>Designed and taught data science curricula, mentoring over 450 students in AI and ML tracks.</li>
+                        <li>Developed machine learning models to optimize customer service verification processes, reducing workforce costs by 92%.</li>
+                        <li>Created a cash-on-delivery optimization model, decreasing rejection rates by 12%.</li>
+                        <li>Designed and deployed two end-to-end data pipelines using Dataiku, demonstrating expertise in data gathering, processing, and machine learning deployment.</li>
                     </ul>
                 </div>
                 <div class="job">
                     <h3>Freelance Data Scientist | Upwork</h3>
                     <div class="date">June 2020 — December 2021</div>
                     <ul>
-                        <li>Developed machine learning models for healthcare and telecom industries.</li>
-                        <li>Created a Parkinson’s disease risk model using OpenCV and Isolation Forest.</li>
+                        <li>Achieved "Top Rated" status with a 100% Job Success Score.</li>
+                        <li>Developed a predictive model for Parkinson's disease using OpenCV and Isolation Forest, achieving 75% accuracy.</li>
+                        <li>Delivered data science and machine learning solutions for clients across healthcare and telecommunications.</li>
+                        <li>Created instructional materials for SkillSoft on Data Science for Decision Making and Machine Learning on AWS.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Teaching Assistant | Information Technology Institute (ITI)</h3>
+                    <div class="date">July 2020 — July 2024</div>
+                    <ul>
+                        <li>Supervised and mentored over 450 students in AI and data science tracks, providing guidance on capstone projects.</li>
+                        <li>Designed and delivered over 15 courses on machine learning, data science, and deep learning topics.</li>
+                        <li>Led curriculum design for ITI’s data science track, incorporating state-of-the-art technologies and practices.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Data Scientist | BBI Consultancy</h3>
+                    <div class="date">July 2018 — July 2020</div>
+                    <ul>
+                        <li>Developed chatbots for telecommunications and banking industries, automating customer interactions and enhancing user experience.</li>
+                        <li>Built machine learning models for telecom subscriber segmentation, optimizing marketing campaigns through targeted offers.</li>
+                        <li>Designed an OCR-based ID detection tool with 92% accuracy, applied in telecom and banking industries.</li>
                     </ul>
                 </div>
             </div>
@@ -203,6 +212,7 @@
             <div class="job">
                 <h3>Diploma in Data Science and Big Data Analytics | Information Technology Institute (ITI)</h3>
                 <div class="date">October 2017 — July 2018</div>
+                <p>Graduated with a focus on machine learning, data preprocessing, and big data analysis, gaining expertise in AI-driven solutions.</p>
             </div>
             <div class="job">
                 <h3>Bachelor's Degree in Electrical Engineering | Faculty of Engineering, Menoufiya University</h3>
@@ -230,6 +240,8 @@
                 <span class="skill">TensorFlow</span>
                 <span class="skill">Keras</span>
                 <span class="skill">Scikit-learn</span>
+                <span class="skill">Time Series Forecasting</span>
+                <span class="skill">Machine Learning</span>
                 <span class="skill">AWS</span>
                 <span class="skill">Azure</span>
                 <span class="skill">MongoDB</span>
