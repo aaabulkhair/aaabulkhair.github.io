@@ -1,263 +1,452 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Abulkhair - Lead Data Scientist</title>
+    <title>Ahmed Abulkhair - Data Scientist</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ahmed Abulkhair - Data Scientist specializing in machine learning and AI">
+    <meta name="author" content="Ahmed Abulkhair">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f4f8;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            background: linear-gradient(135deg, #3498db, #2c3e50);
-            color: #fff;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            margin-bottom: 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            text-transform: uppercase;
-        }
-        .title {
-            font-size: 1.2em;
-            margin-top: 10px;
-            opacity: 0.8;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .contact-info a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 15px;
-            border-radius: 20px;
-            background-color: rgba(255,255,255,0.2);
-            transition: background-color 0.3s;
-        }
-        .contact-info a:hover {
-            background-color: rgba(255,255,255,0.3);
-        }
-        .phone {
-            word-wrap: break-word;
-        }
-        section {
-            background-color: #fff;
-            margin-bottom: 30px;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-        .job {
-            margin-bottom: 25px;
-            position: relative;
-        }
-        .job::before {
-            content: '';
-            position: absolute;
-            left: -38px;
-            top: 0;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #3498db;
-        }
-        h3 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        .date {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background-color: #3498db;
-            color: #fff;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        .timeline {
-            border-left: 2px solid #3498db;
-            padding-left: 20px;
-            margin-left: 15px;
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px 10px;
-            }
-            header {
-                padding: 40px 0;
-            }
-            .profile-picture {
-                width: 120px;
-                height: 120px;
-            }
-        }
+      /* General Body Styling */
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Remove uppercase styling */
+      .section .container h1 {
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      /* Styling for Work Experience Section */
+      .work .work-list {
+        margin-bottom: 30px;
+      }
+
+      /* Date */
+      .work .work-list > li:nth-child(1) {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        color: #8c8c8c;
+        list-style: none;
+      }
+
+      /* Company Name */
+      .work .work-list > li:nth-child(2) {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        color: #333;
+        list-style: none;
+      }
+
+      /* Job Title */
+      .work .work-list > li:nth-child(3) {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+        list-style: none;
+      }
+
+      /* Bullet Points in Summary */
+      .work .work-list ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-left: 0;
+      }
+
+      .work .work-list ul li {
+        font-size: 1em;
+        font-weight: normal;
+        color: #4e4e4e;
+        font-family: 'Lato', Arial, sans-serif;
+        line-height: 1.75em;
+        margin-bottom: 5px;
+      }
+
+      /* Education Section Styles */
+      .education .education-list {
+        margin-bottom: 30px;
+      }
+
+      /* Date */
+      .education .education-list > li:nth-child(1) {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        color: #8c8c8c;
+        list-style: none;
+      }
+
+      /* Institution Name */
+      .education .education-list > li:nth-child(2) {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        color: #333;
+        list-style: none;
+      }
+
+      /* Degree */
+      .education .education-list > li:nth-child(3) {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+        list-style: none;
+      }
+
+      /* Details */
+      .education .education-list ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-left: 0;
+      }
+
+      .education .education-list ul li {
+        font-size: 1em;
+        font-weight: normal;
+        color: #4e4e4e;
+        font-family: 'Lato', Arial, sans-serif;
+        line-height: 1.75em;
+        margin-bottom: 5px;
+      }
+
+      /* Other Styles */
+      .award-list, .skill-list, .portfolio-list, .social {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Styling for Portfolio Section */
+      .portfolio .portfolio-list li {
+        margin-bottom: 20px;
+      }
+
+      .portfolio .portfolio-list li a {
+        font-size: 1.2em;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .portfolio .portfolio-list li p {
+        font-size: 1em;
+        color: #4e4e4e;
+        margin-top: 5px;
+      }
+
+      /* Styling for Social Icons in Footer */
+      footer .social {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      footer .social li {
+          display: inline-block;
+          margin-left: 20px;
+      }
+
+      footer .social li:first-child {
+          margin-left: 0;
+      }
+
+      footer .social li a {
+          font-size: 1.25em;
+          color: #999;
+          text-decoration: none;
+      }
+
+      footer .social li a:hover {
+          color: #333;
+      }
     </style>
 </head>
 <body>
-    <header>
-        <img src="your-profile-picture.jpg" alt="Ahmed Abulkhair" class="profile-picture">
-        <h1>Ahmed Abulkhair</h1>
-        <div class="title">Lead Data Scientist</div>
-        <div class="contact-info">
-            <a href="tel:+201002130308" class="phone">+201002130308</a>
-            <a href="mailto:ahmed.abulkhair@hotmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/aaabulkhair" target="_blank">LinkedIn</a>
-            <a href="https://aaabulkhair.github.io/Analixa/" target="_blank">Blog</a>
-            <a href="https://github.com/aaabulkhair" target="_blank">GitHub</a>
-            <a href="https://www.kaggle.com/ahmedabdulhamid" target="_blank">Kaggle</a>
-            <a href="https://www.upwork.com/freelancers/~01aab1e19de2e24ba4" target="_blank">Upwork</a>
+    <!-- Navigation -->
+    <div class="main-nav">
+        <div class="container">
+            <header class="group top-nav">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                    <span class="logo">Ahmed Abulkhair - Data Scientist</span>
+                </div>
+                <nav id="navbar-1" class="navbar item-nav">
+                    <ul>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-    </header>
-    
-    <div class="container">
-        <section>
-            <h2>Profile</h2>
-            <p>Lead Data Scientist with 6+ years of expertise in Machine Learning, Python, Deep Learning, Time Series Forecasting, and Data Preprocessing. Adept at deploying data-driven solutions and solving complex challenges in various industries. Known for leadership in developing AI-driven projects and improving business operations. I have a passion for using data to drive impactful business results and mentoring data science teams.</p>
-        </section>
-
-        <section>
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                <div class="job">
-                    <h3>Lead Data Scientist | ShopBrain, Beverly Hills, Sheikh Zayed</h3>
-                    <div class="date">February 2024 — Present</div>
-                    <ul>
-                        <li>Spearheaded the Data Team's efforts to enhance the demand forecasting engine for restaurants, reducing MAPE from 28% to 25%.</li>
-                        <li>Led a chatbot assistant project using GPT-4, LLaMA 2, and LangChain to support restaurant operations.</li>
-                        <li>Integrated forecasting models into restaurant management systems via RESTful APIs, improving overall business efficiency.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Senior Data Scientist | Jumia Group</h3>
-                    <div class="date">March 2022 — March 2023</div>
-                    <ul>
-                        <li>Developed machine learning models to optimize customer service verification processes, reducing workforce costs by 92%.</li>
-                        <li>Created a cash-on-delivery optimization model, decreasing rejection rates by 12%.</li>
-                        <li>Designed and deployed two end-to-end data pipelines using Dataiku, demonstrating expertise in data gathering, processing, and machine learning deployment.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Freelance Data Scientist | Upwork</h3>
-                    <div class="date">June 2020 — December 2021</div>
-                    <ul>
-                        <li>Achieved "Top Rated" status with a 100% Job Success Score.</li>
-                        <li>Developed a predictive model for Parkinson's disease using OpenCV and Isolation Forest, achieving 75% accuracy.</li>
-                        <li>Delivered data science and machine learning solutions for clients across healthcare and telecommunications.</li>
-                        <li>Created instructional materials for SkillSoft on Data Science for Decision Making and Machine Learning on AWS.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Teaching Assistant | Information Technology Institute (ITI)</h3>
-                    <div class="date">July 2020 — July 2024</div>
-                    <ul>
-                        <li>Supervised and mentored over 450 students in AI and data science tracks, providing guidance on capstone projects.</li>
-                        <li>Designed and delivered over 15 courses on machine learning, data science, and deep learning topics.</li>
-                        <li>Led curriculum design for ITI’s data science track, incorporating state-of-the-art technologies and practices.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Data Scientist | BBI Consultancy</h3>
-                    <div class="date">July 2018 — July 2020</div>
-                    <ul>
-                        <li>Developed chatbots for telecommunications and banking industries, automating customer interactions and enhancing user experience.</li>
-                        <li>Built machine learning models for telecom subscriber segmentation, optimizing marketing campaigns through targeted offers.</li>
-                        <li>Designed an OCR-based ID detection tool with 92% accuracy, applied in telecom and banking industries.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="job">
-                <h3>Diploma in Data Science and Big Data Analytics | Information Technology Institute (ITI)</h3>
-                <div class="date">October 2017 — July 2018</div>
-                <p>Graduated with a focus on machine learning, data preprocessing, and big data analysis, gaining expertise in AI-driven solutions.</p>
-            </div>
-            <div class="job">
-                <h3>Bachelor's Degree in Electrical Engineering | Faculty of Engineering, Menoufiya University</h3>
-                <div class="date">2012 — 2017</div>
-                <p>Graduation Project: Rehabilitation of Electrical Primary Distribution Networks (Grade: Excellent)</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
-            <ul>
-                <li>AWS Machine Learning - Specialty</li>
-                <li>Deep Learning Nanodegree, Udacity</li>
-                <li>Machine Learning, Stanford University (Coursera)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <span class="skill">Python</span>
-                <span class="skill">R</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Pandas</span>
-                <span class="skill">TensorFlow</span>
-                <span class="skill">Keras</span>
-                <span class="skill">Scikit-learn</span>
-                <span class="skill">Time Series Forecasting</span>
-                <span class="skill">Machine Learning</span>
-                <span class="skill">AWS</span>
-                <span class="skill">Azure</span>
-                <span class="skill">MongoDB</span>
-                <span class="skill">Power BI</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>Languages</h2>
-            <p>Arabic (Fluent), English (Fluent)</p>
-        </section>
-
-        <section>
-            <h2>Achievements</h2>
-            <p>First Place | Transporter Robot Competition, FEE Robotics Club (October 2013)</p>
-        </section>
     </div>
+
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="img/ava.jpg" alt="Ahmed Abulkhair">
+                </div>
+                <div class="unit-80">
+                    <h1>Hi, I'm Ahmed Abulkhair,<br>Data Scientist.</h1>
+                    <h2><span id="typed"></span></h2>
+                </div>
+            </div>
+            <p>
+                Passionate about leveraging data to drive innovation and solve complex problems. With expertise in machine learning, deep learning, and time series analysis, I create impactful solutions that deliver actionable insights.
+            </p>
+            <p>
+                At ShopBrain, I lead projects enhancing the performance and scalability of data platforms, including optimizing pipelines and developing dynamic pricing models.
+            </p>
+            <p>
+                I enjoy mentoring aspiring data scientists and sharing my knowledge to empower others in the field.
+            </p>
+        </div>
+    </div>
+
+	    <!-- Work Experience -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Work<br>Experiences</h1>
+
+            <!-- Lead Data Scientist (ShopBrain) -->
+            <ul class="work-list">
+                <li>July 2024 - Present</li>
+                <li>ShopBrain</li>
+                <li>Lead Data Scientist</li>
+                <ul>
+                    <li>Enhanced demand forecasting engine for restaurants, reducing MAPE from 28% to less than 25%</li>
+                    <li>Led chatbot assistant project using LLM techniques (GPT-4, LLaMA 2, LangChain)</li>
+                    <li>Implemented version control best practices using GitHub and BitBucket</li>
+                    <li>Engineered RESTful APIs to integrate forecasting engine with restaurant management systems</li>
+                </ul>
+            </ul>
+
+            <!-- Senior Data Scientist (ShopBrain) -->
+            <ul class="work-list">
+                <li>February 2024 - July 2024</li>
+                <li>ShopBrain</li>
+                <li>Senior Data Scientist</li>
+                <ul>
+                    <li>Led Data Team in enhancing food and beverage demand forecasting pipeline</li>
+                    <li>Doubled forecasting pipeline performance, achieving 28% MAPE score</li>
+                </ul>
+            </ul>
+
+            <!-- Senior Data Scientist (Jumia Group) -->
+            <ul class="work-list">
+                <li>March 2022 - March 2023</li>
+                <li>Jumia Group</li>
+                <li>Senior Data Scientist</li>
+                <ul>
+                    <li>Optimized customer service verification process, reducing workforce budget by 92%</li>
+                    <li>Enhanced cash-on-delivery mechanism, decreasing rejection/cancellation rates by 12%</li>
+                    <li>Executed data pipelines on Dataiku, from data gathering to model deployment</li>
+                </ul>
+            </ul>
+
+            <!-- Teaching Assistant (Information Technology Institute - ITI) -->
+            <ul class="work-list">
+                <li>July 2020 - July 2024</li>
+                <li>Information Technology Institute (ITI)</li>
+                <li>Teaching Assistant</li>
+                <ul>
+                    <li>Reviewed and enhanced over 40 data science courses</li>
+                    <li>Mentored 450+ students in AI Pro track on machine learning and data science projects</li>
+                    <li>Delivered and designed 15+ courses in data science and machine learning</li>
+                </ul>
+            </ul>
+
+            <!-- Freelance Data Scientist (Upwork) -->
+            <ul class="work-list">
+                <li>June 2020 - March 2022</li>
+                <li>Upwork</li>
+                <li>Freelance Data Scientist</li>
+                <ul>
+                    <li>Achieved Top-Rated status as freelance Data Scientist and Machine Learning Engineer</li>
+                    <li>Developed Parkinson's disease risk predictive model with 75% accuracy</li>
+                    <li>Created instructional material for SkillSoft on Data Science and Machine Learning on AWS</li>
+                </ul>
+            </ul>
+
+            <!-- Data Scientist (BBI Consultancy) -->
+            <ul class="work-list">
+                <li>July 2019 - July 2020</li>
+                <li>BBI Consultancy</li>
+                <li>Data Scientist</li>
+                <ul>
+                    <li>Developed chatbots for telecommunications and banking industries</li>
+                    <li>Created model to group telecom subscribers for targeted offers</li>
+                    <li>Implemented ID detector using OCR with 92% accuracy</li>
+                    <li>Developed AI-powered analytics tool for multiple domains and industries</li>
+                </ul>
+            </ul>
+
+            <!-- KaggleX Mentor (Kaggle) -->
+            <ul class="work-list">
+                <li>July 2023 - January 2024</li>
+                <li>KaggleX BIPOC Mentorship Program</li>
+                <li>Mentor</li>
+                <ul>
+                    <li>Guided early-career data scientists in AI and machine learning</li>
+                    <li>Helped mentees develop strong portfolios and professional skills</li>
+                </ul>
+            </ul>
+
+            <!-- Session Lead (Udacity) -->
+            <ul class="work-list">
+                <li>September 2021 - March 2022</li>
+                <li>Udacity</li>
+                <li>Deep Learning Session Lead</li>
+                <ul>
+                    <li>Served as Deep Learning instructor for nanodegree program</li>
+                    <li>Mentored students in CNN and GAN projects</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Education Section -->
+    <div class="education section second" id="education">
+        <div class="container">
+            <h1>Education</h1>
+
+            <!-- First Education Item -->
+            <ul class="education-list">
+                <li>October 2017 — July 2018</li>
+                <li>Information Technology Institute (ITI), Smart Village, Cairo</li>
+                <li>9-Month Diploma in Data Science and Big Data Analytics</li>
+            </ul>
+
+            <!-- Second Education Item -->
+            <ul class="education-list">
+                <li>2012 — 2017</li>
+                <li>Faculty of Engineering, Al-Minufiyah University, Egypt</li>
+                <li>Bachelor's Degree in Electrical Engineering | Grade: Good</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Awards & Achievements -->
+    <div class="award section second" id="achievements">
+        <div class="container">
+            <h1>Awards &amp;<br>Achievements</h1>
+            <ul class="award-list list-flat">
+                <li>August 2023</li>
+                <li>AWS Certified Machine Learning – Specialty</li>
+            </ul>
+            <ul class="award-list list-flat">
+                <li>June 2021</li>
+                <li>Top-Rated Freelancer on Upwork</li>
+            </ul>
+            <!-- Other achievements can be added here -->
+        </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technical<br>Skills</h1>
+            <ul class="skill-list list-flat">
+                <li>Programming Languages</li>
+                <li>Python, R, SQL</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Machine Learning &amp; AI</li>
+                <li>TensorFlow, PyTorch, Scikit-learn, Keras</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Data Visualization</li>
+                <li>Matplotlib, Seaborn, Tableau</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Tools &amp; Platforms</li>
+                <li>Git, Docker, AWS, Dataiku</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio section second" id="portfolio">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <ul class="portfolio-list list-flat">
+                <li><a href="https://www.linkedin.com/in/aaabulkhair">LinkedIn</a></li>
+                <li><a href="https://www.kaggle.com/ahmedabdulhamid">Kaggle</a></li>
+                <li><a href="https://medium.com/@aaabulkhair">Medium</a></li>
+                <li><a href="https://www.upwork.com/freelancers/~01e8b690de797b2ecf?mp_source=share">Upwork</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Quote -->
+    <div class="quote">
+        <div class="container text-centered">
+            <h1>"Data is the compass guiding us into the future."</h1>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="units-row">
+                <div class="unit-50">
+                    <p>© 2024 Ahmed Abulkhair</p>
+                </div>
+                <div class="unit-50">
+                    <ul class="social list-flat right">
+                        <li><a href="mailto:ahmed.abulkhair@hotmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="tel:+201002130308"><i class="fa fa-phone"></i></a></li>
+                        <li><a href="https://x.com/aaabulkhair_"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/aaabulkhair"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://t.me/+201002130308"><i class="fa fa-telegram"></i></a></li>
+                        <li><a href="https://wa.me/201002130308"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+        function newTyped(){}
+        $(function(){
+            $("#typed").typed({
+                // Change to edit type effect
+                strings: ["data science innovation", "machine learning solutions", "your next project"],
+                typeSpeed: 90,
+                backDelay: 700,
+                contentType: "html",
+                loop: true,
+                resetCallback: function() { newTyped(); }
+            });
+            $(".reset").click(function(){
+                $("#typed").typed('reset');
+            });
+        });
+    </script>
 </body>
 </html>
